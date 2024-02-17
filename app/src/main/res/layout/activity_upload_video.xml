@@ -1,0 +1,308 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Profile_F"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@color/purple_200"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView android:tint="@color/white"
+                    android:id="@+id/back_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/ic_arrow_back" />
+
+                <TextView android:fontFamily="@font/times_new_roman" android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="2dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="2dp"
+                    android:text="Upload Post"
+                    
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="60dp"
+            android:layout_below="@+id/toolbar"
+            android:fillViewport="true"
+            android:id="@+id/scrollview">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#E3E3E3" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white"
+                    android:id="@+id/top_layout">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:id="@+id/ll"
+                        android:layout_margin="5dp"
+                        android:layout_height="wrap_content">
+                        <VideoView
+                            android:background="@drawable/noimage"
+                            android:layout_width="fill_parent"
+                            android:layout_height="250dp"
+                            android:id="@+id/video"/>
+                        <ImageView
+                            android:id="@+id/poster_img"
+                            android:background="@drawable/noimage"
+                            android:layout_width="250dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="250dp">
+
+                        </ImageView>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/following_layout">
+                        <TextView android:fontFamily="@font/times_new_roman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="a@anoop_pandey"
+                            android:id="@+id/follow_count_txt"
+                            android:paddingTop="2dp"
+                            android:paddingBottom="2dp"
+                            android:paddingRight="10dp"
+                            android:textSize="17dp"
+                            android:textStyle="bold"/>
+                        <EditText android:fontFamily="@font/times_new_roman"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/des_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:hint="Write about your post here.."
+                            android:maxLength="300"
+                            android:maxLines="6"
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/rect"
+                            android:textColorHint="@color/bluelight"
+                            android:textSize="16dp" />
+
+                        <LinearLayout
+                            android:layout_below="@+id/tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="2dp">
+                            <TextView android:fontFamily="@font/times_new_roman"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Max.Limit-300 words"
+                                android:paddingTop="2dp"
+                                android:paddingBottom="2dp"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textSize="13dp"
+                                android:textStyle="bold"/>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_marginBottom="10dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_height="wrap_content">
+                                <TextView android:fontFamily="@font/times_new_roman"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="tranding@"
+                                    android:paddingTop="2dp"
+                                    android:paddingBottom="2dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textSize="13dp"
+                                    android:background="@drawable/rectoval"
+                                    android:textStyle="bold"/>
+                                <TextView android:fontFamily="@font/times_new_roman"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="#"
+                                    android:layout_marginLeft="10dp"
+                                    android:background="@drawable/rectoval"
+                                    android:paddingTop="2dp"
+                                    android:paddingBottom="2dp"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textSize="13dp"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@drawable/rect"
+                        android:id="@+id/youtube_link"
+                        android:layout_below="@+id/following_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="10dp"
+                            android:tint="@color/light_grey"
+                            android:src="@drawable/upload_video" />
+                        <EditText android:fontFamily="@font/times_new_roman"
+                            android:id="@+id/video_url_et"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="match_parent"
+                            android:hint="Paste your Video url here.."
+                            android:paddingLeft="10dp"
+                            android:background="@null"
+                            android:textColorHint="@color/bluelight"
+                            android:textSize="16dp" />
+                    </LinearLayout>
+                    <TextView  android:layout_below="@+id/youtube_link" android:fontFamily="@font/times_new_roman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*Note:- Upload only Youtube video Link!"
+                        android:paddingTop="2dp"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="10dp"
+                        android:id="@+id/tv"
+                        android:gravity="end"
+                        android:textColor="@color/purple_500"
+                        android:paddingRight="10dp"
+                        android:textSize="15dp"
+                        android:textStyle="bold"/>
+
+
+                </RelativeLayout>
+
+                <View
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/light_grey" />
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:tint="@color/light_grey"
+                        android:src="@drawable/upload_voice" />
+                    <Spinner
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical"
+                        android:id="@+id/sp_state"
+                        android:layout_marginLeft="16dp" />
+                </LinearLayout>
+
+
+                <LinearLayout                         android:background="@drawable/rect"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/select_image_poster_ll"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:scaleType="fitXY"
+                        android:background="@android:drawable/ic_menu_my_calendar" />
+                    <TextView android:fontFamily="@font/times_new_roman"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="5"
+                        android:gravity="center_vertical"
+                        android:text="Post Image Here.."
+                        android:layout_marginLeft="16dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:tint="@color/light_grey"
+                        android:src="@drawable/upload_location" />
+                    <EditText android:fontFamily="@font/times_new_roman"
+                        android:id="@+id/time_duration_tv"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="5"
+                        android:background="@null"
+                        android:inputType="textPostalAddress"
+                        android:gravity="center_vertical"
+                        android:hint="Enter Location"
+                        android:layout_marginLeft="16dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <TextView android:fontFamily="@font/times_new_roman"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click here to Upload >> "
+        android:background="#18B11E"
+        android:id="@+id/upload_video_tv"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

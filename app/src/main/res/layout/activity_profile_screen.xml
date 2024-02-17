@@ -1,0 +1,597 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Profile_F"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:background="@color/purple_200"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_arrow_back"
+            android:padding="10dp"
+            android:id="@+id/back_btn"
+            android:tint="@color/white"/>
+        <TextView android:fontFamily="@font/times_new_roman"
+            android:id="@+id/title_tv"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/white"
+
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+          <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+              <!--           Anoop- CardLayout add here-->
+              <androidx.cardview.widget.CardView
+                  android:id="@+id/cardlayout"
+                  android:layout_marginRight="5dp"
+                  android:layout_marginLeft="5dp"
+                  android:layout_marginBottom="5dp"
+                  app:cardElevation="5dp"
+                  app:cardCornerRadius="5dp"
+                  app:cardBackgroundColor="#FFEACB"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:orientation="vertical"
+                      android:layout_height="wrap_content">
+                      <LinearLayout
+                          android:layout_margin="5dp"
+                          android:padding="2dp"
+                          android:background="@drawable/rect_red"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content">
+                          <LinearLayout
+                              android:id="@+id/parentView"
+                              android:layout_width="match_parent"
+                              android:layout_height="280dp"
+                              android:layout_centerInParent="true"
+                              android:orientation="vertical">
+                              <androidx.cardview.widget.CardView
+                                  android:layout_width="match_parent"
+                                  app:cardElevation="10dp"
+                                  android:layout_height="wrap_content">
+                                  <LinearLayout
+                                      android:layout_width="match_parent"
+                                      android:orientation="vertical"
+                                      android:background="@drawable/healthcard"
+                                      android:layout_height="wrap_content">
+                                      <RelativeLayout
+                                          android:layout_width="match_parent"
+                                          android:layout_height="wrap_content">
+                                          <TextView android:fontFamily="@font/times_new_roman"
+                                              android:layout_centerVertical="true"
+                                              android:layout_width="match_parent"
+                                              android:text="सवर्ण महासंघ फाउंडेशन"
+                                              android:textStyle="bold"
+                                              android:textAlignment="center"
+                                              android:layout_gravity="start"
+                                              android:layout_marginLeft="10dp"
+                                              android:layout_marginRight="90dp"
+                                              android:textSize="18dp"
+                                              android:textColor="#000C4F"
+                                              android:layout_height="wrap_content">
+                                          </TextView>
+
+                                          <ImageView
+                                              android:layout_centerVertical="true"
+                                              android:layout_alignParentRight="true"
+                                              android:layout_width="70dp"
+                                              android:layout_height="70sp"
+                                              android:src="@drawable/appicon"
+                                              android:layout_marginRight="10dp"
+                                              android:layout_gravity="right"/>
+                                      </RelativeLayout>
+
+                                      <LinearLayout
+                                          android:layout_width="match_parent"
+                                          android:orientation="horizontal"
+                                          android:layout_height="wrap_content">
+                                          <ImageView
+                                              android:id="@+id/profile_img"
+                                              android:layout_width="100dp"
+                                              android:layout_height="100sp"
+                                              android:src="@drawable/dummy"
+                                              android:padding="2dp"
+                                              android:background="@drawable/button_shap"
+                                              android:layout_marginLeft="10dp"
+                                              android:layout_gravity="left"/>
+                                          <LinearLayout
+                                              android:layout_width="match_parent"
+                                              android:orientation="vertical"
+                                              android:layout_marginLeft="10dp"
+                                              android:layout_marginRight="20dp"
+                                              android:layout_gravity="center_vertical"
+                                              android:layout_height="wrap_content">
+                                              <TextView android:fontFamily="@font/times_new_roman"
+                                                  android:layout_width="wrap_content"
+                                                  android:text="Anoop Pandey"
+                                                  android:textColor="@color/purple_700"
+                                                  android:textStyle="bold"
+                                                  android:textSize="17dp"
+                                                  android:id="@+id/name_tv"
+                                                  android:layout_height="wrap_content">
+                                              </TextView>
+                                              <TextView android:fontFamily="@font/times_new_roman"
+                                                  android:layout_width="wrap_content"
+                                                  android:text="Id No.-78956"
+                                                  android:textColor="@color/black"
+                                                  android:textSize="15sp"
+                                                  android:layout_marginTop="2dp"
+                                                  android:id="@+id/car_no_tv"
+                                                  android:layout_height="wrap_content">
+                                              </TextView>
+                                              <TextView android:fontFamily="@font/times_new_roman"
+                                                  android:layout_width="wrap_content"
+                                                  android:text="Member \nLucknow Utter pradesh"
+                                                  android:textSize="13sp"
+                                                  android:layout_marginTop="5dp"
+                                                  android:id="@+id/loca_tv"
+                                                  android:textColor="@color/black"
+                                                  android:layout_height="wrap_content">
+                                              </TextView>
+                                              <TextView android:fontFamily="@font/times_new_roman"
+                                                  android:layout_width="wrap_content"
+                                                  android:text="Member \nLucknow Utter pradesh"
+                                                  android:textSize="12sp"
+                                                  android:layout_marginTop="5dp"
+                                                  android:textStyle="bold"
+                                                  android:id="@+id/membersince_tv"
+                                                  android:textColor="@color/black"
+                                                  android:layout_height="wrap_content">
+                                              </TextView>
+
+                                          </LinearLayout>
+                                      </LinearLayout>
+                                      <RelativeLayout
+                                          android:layout_width="match_parent"
+                                          android:layout_marginTop="10dp"
+                                          android:layout_height="wrap_content">
+                                          <TextView android:fontFamily="@font/times_new_roman"
+                                              android:layout_alignParentRight="true"
+                                              android:layout_width="wrap_content"
+                                              android:text="Generated By- सवर्ण महासंघ फाउंडेशन"
+                                              android:textStyle="bold"
+                                              android:padding="5dp"
+                                              android:layout_marginLeft="10dp"
+                                              android:textSize="11dp"
+                                              android:layout_height="wrap_content">
+                                          </TextView>
+                                      </RelativeLayout>
+                                      <TextView android:fontFamily="@font/times_new_roman"
+                                          android:layout_marginTop="15dp"
+                                          android:layout_width="wrap_content"
+                                          android:text="Globally Accessible सवर्ण महासंघ फाउंडेशन Record System"
+                                          android:textStyle="bold"
+                                          android:layout_marginBottom="10dp"
+                                          android:layout_gravity="start"
+                                          android:layout_marginLeft="10dp"
+                                          android:textSize="10dp"
+                                          android:textColor="@color/black"
+                                          android:layout_height="wrap_content">
+                                      </TextView>
+                                  </LinearLayout>
+                              </androidx.cardview.widget.CardView>
+                          </LinearLayout>
+                      </LinearLayout>
+
+                      <TextView android:fontFamily="@font/times_new_roman"
+                          android:layout_marginTop="10dp"
+                          android:layout_width="match_parent"
+                          android:text="Share With Friends and family"
+                          android:textStyle="bold"
+                          android:gravity="center_horizontal"
+                          android:textAlignment="center"
+                          android:layout_marginBottom="10dp"
+                          android:layout_gravity="center_horizontal"
+                          android:textSize="16dp"
+                          android:textColor="@color/purple_200"
+                          android:layout_height="wrap_content">
+                      </TextView>
+
+                      <LinearLayout
+                          android:layout_width="match_parent"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+                          <ImageButton
+                              android:id="@+id/sharelink_ib"
+                              android:layout_width="0dp"
+                              android:background="@drawable/share"
+                              android:layout_weight="1"
+                              android:layout_height="50dp"
+                              android:layout_marginTop="10dp"
+                              android:layout_marginBottom="15dp"
+                              android:layout_marginRight="16dp"
+                              android:layout_marginLeft="16dp"
+                              android:textColor="@color/white"/>
+
+                          <ImageButton
+                              android:id="@+id/download_ib"
+                              android:layout_width="0dp"
+                              android:background="@drawable/downloadlink"
+                              android:layout_weight="1"
+                              android:layout_height="50dp"
+                              android:layout_marginTop="10dp"
+                              android:layout_marginBottom="15dp"
+                              android:layout_marginRight="16dp"
+                              android:layout_marginLeft="16dp"
+                              android:textColor="@color/white"/>
+
+                      </LinearLayout>
+
+                      <!--         End  Anoop- CardLayout add here-->
+
+
+
+
+
+
+                  </LinearLayout>
+              </androidx.cardview.widget.CardView>
+<!--              <end cardlayout-->
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/cardlayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="120dp"
+                    android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="25dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/user_image"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/profile"
+                            app:civ_border_color="@color/white"
+                            app:civ_border_width="2dp" />
+
+                        <ImageView
+                            android:id="@+id/tick_img"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_alignParentRight="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/tick" />
+
+                    </RelativeLayout>
+
+
+                    <TextView android:fontFamily="@font/times_new_roman"
+                        android:id="@+id/person_name_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="PandeyJi"
+                        android:textColor="#0D1B6A"
+
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView android:fontFamily="@font/times_new_roman"
+                        android:id="@+id/account_create_date_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="news creater since 2022"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="55dp"
+                    android:layout_toRightOf="@+id/ll"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/following_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView android:fontFamily="@font/times_new_roman"
+                            android:id="@+id/post_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="00"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold" />
+
+                        <TextView android:fontFamily="@font/times_new_roman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+
+                            android:paddingRight="10dp"
+                            android:paddingBottom="5dp"
+                            android:text="Posts"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/follow_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView android:fontFamily="@font/times_new_roman"
+                            android:id="@+id/followers_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="00k"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold" />
+
+                        <TextView android:fontFamily="@font/times_new_roman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+
+                            android:paddingRight="10dp"
+                            android:paddingBottom="5dp"
+                            android:text="Followers"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/following_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView android:fontFamily="@font/times_new_roman"
+                            android:id="@+id/following_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="00"
+                            android:textSize="16dp"
+
+                            android:textStyle="bold" />
+
+                        <TextView android:fontFamily="@font/times_new_roman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="5dp"
+
+                            android:paddingRight="10dp"
+                            android:paddingBottom="5dp"
+                            android:text="Following"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="20dp"
+                android:background="#F2D1D0D0">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginRight="30dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/user_post_ll"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:tint="@color/purple_700"
+                        android:src="@drawable/comment"/>
+
+                    <TextView android:fontFamily="@font/times_new_roman"
+                        android:id="@+id/ttl_post_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
+
+                        android:textColor="@color/purple_700"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="5dp"
+                        android:text="Post"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <View
+                    android:layout_width="0.2dp"
+                    android:background="#707070"
+                    android:layout_height="40dp">
+
+                </View>
+
+                <LinearLayout
+                    android:id="@+id/user_draft_ll"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_inbox_icon"/>
+
+                    <TextView android:fontFamily="@font/times_new_roman"
+                        android:id="@+id/ttl_draft_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
+
+                        android:paddingRight="15dp"
+                        android:paddingBottom="5dp"
+                        android:text="Draft"
+                        android:textSize="13dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="5dp"
+                android:background="#F2D1D0D0">
+            </View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="No Record Found !"
+                    android:textSize="16dp"
+                    android:padding="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/norecord_tv"
+                    android:textColor="@color/purple_700"
+                    android:layout_height="wrap_content">
+                </TextView>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/cust_recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+<!--                <include layout="@layout/dynamic_mypost"></include>-->
+
+            </RelativeLayout>
+
+
+
+
+
+        </LinearLayout>
+        <!--        </androidx.core.widget.NestedScrollView>-->
+    </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            app:itemIconSize="20dp"
+            app:labelVisibilityMode="labeled"
+            app:elevation="5dp"
+            app:menu="@menu/menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_add_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:elevation="8dp"
+            android:padding="5dp"
+            android:background="@drawable/oval"
+            android:src="@drawable/ic_add_icon_dark"
+            app:layout_constraintStart_toStartOf="@+id/nav_view"
+            app:layout_constraintEnd_toEndOf="@+id/nav_view"
+            app:layout_constraintTop_toTopOf="@+id/nav_view"
+            app:layout_constraintBottom_toBottomOf="@+id/nav_view"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

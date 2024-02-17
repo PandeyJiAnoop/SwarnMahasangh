@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:clickable="true"
+    android:fitsSystemWindows="true"
+    android:id="@+id/comment_screen"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.percentlayout.widget.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            app:layout_heightPercent="75%"
+            android:background="@drawable/d_top_left_right_radius"
+            android:layout_alignParentBottom="true"
+            android:layout_height="0dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/top_layout">
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/Goback"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/cancel"
+
+                    android:layout_margin="5dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:id="@+id/comment_count"
+                    android:textColor="@color/black"
+                    android:layout_centerInParent="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/top_layout"
+                android:layout_above="@+id/write_layout"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/grey"
+                    android:textSize="10dp"
+                    android:layout_marginTop="20dp"
+                    android:text="No Record!"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/cust_chat_recyclerView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </RelativeLayout>
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rectangle_white"
+                android:id="@+id/write_layout"
+                android:layout_alignParentBottom="true">
+
+                <EditText
+                    android:id="@+id/message_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="60dp"
+                    android:background="@null"
+                    android:hint="Leave a comment..."
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/send_btn"
+                    android:padding="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:rotation="-5"
+
+                    android:tint="@color/purple_200"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_send_white_24dp"/>
+
+                <ProgressBar
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:visibility="gone"
+                    android:padding="5dp"
+                    android:id="@+id/send_progress"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </androidx.percentlayout.widget.PercentRelativeLayout>
+</FrameLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:background="@color/purple_200"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:padding="10dp"
+                    android:id="@+id/back_btn"
+                    android:tint="@color/white"/>
+                <TextView android:fontFamily="@font/times_new_roman"
+                    android:id="@+id/title_tv"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Messaging"
+                    android:textColor="@color/white"
+
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/follow_ll"
+                android:layout_height="wrap_content" >
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:text="All Members"
+                    android:id="@+id/follow_btn"
+                    android:background="@drawable/bg_btn"
+                    android:padding="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="12sp"
+                    android:textAlignment="center" />
+                <androidx.appcompat.widget.AppCompatButton   android:background="@drawable/rectoval"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="5dp"
+                    android:id="@+id/message_btn"
+                    android:text="Committee Members"
+                    android:textSize="12sp"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/all_member_ll"
+                android:layout_height="wrap_content">
+                <include layout="@layout/dynamic_comuniteemember_chat"></include>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/all_cmember_ll"
+                android:layout_height="wrap_content">
+                <include layout="@layout/dynamic_comuniteemember_chat"></include>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlBottom"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            app:itemIconSize="20dp"
+            app:labelVisibilityMode="labeled"
+            app:elevation="5dp"
+            app:menu="@menu/menu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image_view_add_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:elevation="8dp"
+            android:padding="5dp"
+            android:background="@drawable/oval"
+            android:src="@drawable/ic_add_icon_dark"
+            app:layout_constraintStart_toStartOf="@+id/nav_view"
+            app:layout_constraintEnd_toEndOf="@+id/nav_view"
+            app:layout_constraintTop_toTopOf="@+id/nav_view"
+            app:layout_constraintBottom_toBottomOf="@+id/nav_view"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFEACB"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:background="@color/purple_200">
+            <ImageView
+                android:id="@+id/back_img"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:tint="@color/white"
+                android:src="@drawable/ic_arrow_back" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_toRightOf="@id/back_img"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="Edit Profile"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:elevation="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profile_image"
+                            android:layout_width="100dp"
+                            app:civ_border_width="4dp"
+                            app:civ_border_color="@color/grey"
+                            android:layout_height="100dp"
+                            android:background="@drawable/reg_img" />
+                        <ImageView
+                            android:id="@+id/iv_uploadimage"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:visibility="gone"
+                            android:layout_gravity="bottom|right"
+                            android:background="@drawable/butn"
+                            android:src="@android:drawable/ic_menu_edit" />
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                    <TextView
+                        android:id="@+id/et_Name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:enabled="false"
+                        android:textAlignment="center"
+                        android:text="Anoop pandey"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tv_mob_No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:text="+91- 9696381023"
+                        android:textColor="@color/black"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp">
+
+                    <com.google.android.material.textfield.TextInputEditText android:fontFamily="@font/times_new_roman"
+                        android:id="@+id/edt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="First Name"
+
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                    android:layout_margin="2dp">
+
+                    <com.google.android.material.textfield.TextInputEditText android:fontFamily="@font/times_new_roman"
+                        android:id="@+id/edt_last"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Last Name"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp">
+
+                    <com.google.android.material.textfield.TextInputEditText android:fontFamily="@font/times_new_roman"
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp">
+
+                    <TextView android:fontFamily="@font/times_new_roman"
+                        android:id="@+id/tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:text="Cast*"
+                        android:visibility="gone"
+                        android:textColor="#555555"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"/>
+
+
+                    <Spinner
+                        android:visibility="gone"
+                        android:id="@+id/cast_sp"
+                        android:layout_below="@+id/tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/border"
+                        android:entries="@array/castename" />
+                    <TextView android:fontFamily="@font/times_new_roman"
+                        android:layout_below="@+id/cast_sp"
+                        android:id="@+id/TextView_indian_states"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="6dp"
+                        android:layout_marginTop="2dp"
+                        android:text="@string/state"
+                        android:textColor="#555555"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"/>
+
+
+                    <Spinner
+                        android:background="@drawable/border"
+                        android:id="@+id/sp_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_below="@id/TextView_indian_states"/>
+
+                    <TextView android:fontFamily="@font/times_new_roman"
+                        android:id="@+id/TextView_indian_districts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/sp_state"
+                        android:layout_marginTop="2dp"
+                        android:padding="6dp"
+                        android:text="@string/district"
+                        android:textColor="#555555"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true" />
+
+                    <Spinner
+                        android:background="@drawable/border"
+                        android:id="@+id/sp_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_below="@id/TextView_indian_districts"/>
+                </RelativeLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/button_corner1"
+                    android:text="Update"
+                    android:textSize="21dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <!--    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>-->
+
+</LinearLayout>

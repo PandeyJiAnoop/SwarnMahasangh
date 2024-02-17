@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEFD8"
+    android:id="@+id/mail_rl">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginBottom="50dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:padding="5dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/appicon">
+                </ImageView>
+                <TextView android:fontFamily="@font/times_new_roman"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:textSize="28dp"
+                    android:visibility="gone"
+                    android:text="Customer \n SignIn"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:orientation="vertical">
+                        <TextView android:fontFamily="@font/times_new_roman" 
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_horizontal"
+                            android:gravity="center_vertical"
+                            android:text="Welcome To सवर्ण महासंघ फाउंडेशन Login"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            
+                            android:textColor="@color/black" />
+                        <View
+                            android:layout_width="220dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center_horizontal"
+                            android:background="@color/black"
+                            android:layout_height="4dp">
+
+                        </View>
+
+                        <RelativeLayout
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/login_btn"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <EditText android:fontFamily="@font/times_new_roman"
+                                android:layout_toRightOf="@+id/phone_img"
+                                android:id="@+id/mob_et"
+                                android:layout_marginRight="60dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:hint="Enter Mobile|Userid"
+                                android:maxLength="10"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:textColorHint="#BAB9B8"  />
+                            <ImageView
+                                android:id="@+id/phone_img"
+                                android:layout_width="50dp"
+                                android:padding="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:src="@android:drawable/ic_menu_call"
+                                android:layout_height="50dp">
+                            </ImageView>
+                        </RelativeLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="@color/grey"
+                            android:layout_height="1dp">
+
+                        </View>
+
+
+
+                        <RelativeLayout
+                            android:paddingLeft="10dp"
+                            android:background="@drawable/login_btn"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <EditText android:fontFamily="@font/times_new_roman"
+                                android:layout_toRightOf="@+id/pass_img"
+                                android:id="@+id/pass_et"
+                                android:layout_marginRight="60dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:hint="Enter Password"
+                                android:inputType="textPassword"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:background="@null"
+                                android:singleLine="true"
+                                android:textColorHint="#BAB9B8"  />
+                            <ImageView
+                                android:id="@+id/pass_img"
+                                android:layout_width="50dp"
+                                android:padding="10dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:src="@android:drawable/ic_partial_secure"
+                                android:layout_height="50dp">
+                            </ImageView>
+                        </RelativeLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:background="@color/grey"
+                            android:layout_height="1dp">
+
+                        </View>
+
+
+
+                        <TextView android:fontFamily="@font/times_new_roman"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:padding="5dp"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:id="@+id/forget_tv"
+                            android:text="Forget Password ?"
+                            android:textColor="@color/black"/>
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView android:fontFamily="@font/times_new_roman"
+                                android:id="@+id/help_tv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center_vertical"
+                                android:textAlignment="center"
+                                android:padding="4dp"
+                                android:text="By Continuing. you agree to our terms of Service Privacy Policy and Content Policy"
+                                android:textSize="13dp"
+                                android:textColor="#606060" />
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginBottom="11dp"
+                                android:layout_gravity="center_horizontal"
+                                android:background="#D5D1D1"
+                                android:layout_height="0.1dp">
+
+                            </View>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:gravity="center_horizontal"
+                            android:background="#E30404"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_height="45dp">
+                            <RelativeLayout
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:id="@+id/btn_login"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginLeft="10dp">
+                                <TextView
+                                    android:id="@+id/tv1"
+                                    android:text="Submit"
+                                    android:layout_centerInParent="true"
+                                    android:textAllCaps="false"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center_horizontal"
+                                    android:fontFamily="sans-serif-condensed-medium"
+                                    android:textColor="@color/white"
+                                    android:textStyle="bold"
+
+                                    android:textSize="19dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                </TextView>
+                            </RelativeLayout>
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="300dp"
+
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:visibility="gone"
+                                android:layout_width="35dp"
+                                android:layout_marginRight="2dp"
+                                android:src="@drawable/profile"
+                                android:layout_gravity="center_vertical"
+                                android:layout_height="35dp">
+                            </ImageView>
+                            <Button
+                                android:id="@+id/login_rl"
+                                android:layout_height="wrap_content"
+                                android:layout_width="wrap_content"
+                                android:textAlignment="center"
+                                android:textStyle="bold"
+                                android:textSize="14dp"
+                                android:textColor="#fff"
+                                android:text="सवर्ण महासंघ फाउंडेशन में जुडने के लिए यहां दबाये!"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

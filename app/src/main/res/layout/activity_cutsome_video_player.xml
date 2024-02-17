@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rr_header"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/purple_200">
+        <ImageView
+            android:id="@+id/back_img"
+            android:layout_width="50dp"
+            android:padding="10dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:tint="@color/white"
+            android:src="@drawable/ic_arrow_back" />
+    </RelativeLayout>
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ytPlayer"
+        app:layout_constraintTop_toTopOf="parent"/>
+</LinearLayout>

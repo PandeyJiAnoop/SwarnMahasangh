@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:elevation="5dp"
+        android:id="@+id/rlHeader"
+        android:background="@color/purple_500"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+            <ImageView
+                android:id="@+id/ivMenu"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:tint="@color/white"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_arrow_back" />
+            <TextView android:fontFamily="@font/times_new_roman"
+                android:layout_marginLeft="10dp"
+                android:text="Help and support"
+                android:id="@+id/tvCityNmae"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/ivMenu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/rlHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <RelativeLayout                     android:id="@+id/donate_ll"
+
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <ImageView                     android:id="@+id/donate_img"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/s_donate"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+                <TextView android:fontFamily="@font/times_new_roman"
+                    android:text="Donate Now"
+                    android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/donate_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <RelativeLayout                     android:id="@+id/community_ll"
+
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <ImageView                     android:id="@+id/about_img1"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/appicon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+                <TextView android:fontFamily="@font/times_new_roman"
+                    android:text="Community Member"
+                    android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/about_img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <RelativeLayout                     android:id="@+id/about_ll"
+
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <ImageView                     android:id="@+id/about_img"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/s_about"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+                <TextView android:fontFamily="@font/times_new_roman"
+                    android:text="About Our Foundation"
+                    android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/about_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <RelativeLayout
+                android:id="@+id/edit_profile_ll"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/fqs11"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/s_edit"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+                <TextView android:fontFamily="@font/times_new_roman"
+                    android:text="Edit Profile"
+                    android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/fqs11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <RelativeLayout
+                android:id="@+id/changePass_rl"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/pas"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/s_faq"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+                <TextView android:fontFamily="@font/times_new_roman"
+                    android:text="Change Password"
+                    android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/pas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+
+            <RelativeLayout
+                android:id="@+id/rlFaQ"
+                android:layout_marginTop="5dp"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/fqs"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/s_faq"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+                <TextView android:fontFamily="@font/times_new_roman"
+                    android:id="@+id/tvfaqs"
+                    android:text="FAQs"
+                    android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/fqs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <RelativeLayout
+                android:id="@+id/rlTermsCondition"
+                android:layout_below="@+id/rlFaQ"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/ivTerms"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/s_termscondition"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+                <TextView android:fontFamily="@font/times_new_roman"
+                    android:id="@+id/tvTerms"
+                    android:text="Terms and Conditions"
+                    android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivTerms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <RelativeLayout
+                android:id="@+id/rlPrivacyPolicy"
+                android:layout_below="@+id/rlTermsCondition"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/ivPolicy"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/s_privacypolicy"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+                <TextView android:fontFamily="@font/times_new_roman"
+                    android:id="@+id/tvPolicy"
+                    android:text="Privacy Policy"
+                    android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+            <RelativeLayout
+                android:id="@+id/rlCancelation"
+                android:layout_below="@+id/rlPrivacyPolicy"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+                <ImageView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/ivCanceletion"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/s_logout"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"/>
+                <TextView android:fontFamily="@font/times_new_roman"
+                    android:id="@+id/tvCanceletion"
+                    android:text="Exit"
+                    android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/ivCanceletion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey"/>
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/fb"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/fba"
+                    android:padding="5dp"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"/>
+                <ImageView
+                    android:padding="5dp"
+                    android:id="@+id/telegram"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/insta"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"/>
+                <ImageView
+                    android:id="@+id/youtube"
+                    android:padding="5dp"
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/youtube"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"/>
+                <ImageView
+
+                    android:id="@+id/whatsap"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/twitter"
+                    android:layout_height="55dp"
+                    android:padding="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+            <TextView android:fontFamily="@font/times_new_roman"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:background="@drawable/button_corner1"
+                android:id="@+id/tvCallCustomer"
+                android:text="Call Our Support Team"
+                android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black"
+                android:layout_below="@+id/rlCancelation"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:id="@+id/bottom_menu"
+    android:layout_height="wrap_content">
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        app:itemIconSize="20dp"
+        app:labelVisibilityMode="labeled"
+        app:elevation="5dp"
+        app:menu="@menu/menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/image_view_add_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:elevation="8dp"
+        android:padding="5dp"
+        android:background="@drawable/oval"
+        android:src="@drawable/ic_add_icon_dark"
+        app:layout_constraintStart_toStartOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="@+id/nav_view"
+        app:layout_constraintTop_toTopOf="@+id/nav_view"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_view"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
